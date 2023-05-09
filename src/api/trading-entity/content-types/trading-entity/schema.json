@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trading_entities",
+  "info": {
+    "singularName": "trading-entity",
+    "pluralName": "trading-entities",
+    "displayName": "TradingEntity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tradingName": {
+      "type": "string",
+      "required": true
+    },
+    "entityName": {
+      "type": "string"
+    },
+    "abn": {
+      "type": "string",
+      "required": true
+    },
+    "acn": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "fax": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "website": {
+      "type": "string"
+    },
+    "entityType": {
+      "type": "enumeration",
+      "enum": [
+        "customer",
+        "supplier",
+        "contractor",
+        "mutual"
+      ]
+    },
+    "shippingAddress": {
+      "type": "component",
+      "repeatable": true,
+      "component": "address.address"
+    },
+    "billingAddress": {
+      "type": "component",
+      "repeatable": true,
+      "component": "address.address"
+    }
+  }
+}
