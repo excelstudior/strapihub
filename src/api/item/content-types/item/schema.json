@@ -36,10 +36,26 @@
       "type": "enumeration",
       "enum": [
         "stock",
-        "service",
-        "adhoc"
+        "clinic service",
+        "lab service",
+        "miscellaneous"
       ],
       "required": true
+    },
+    "subType": {
+      "type": "enumeration",
+      "enum": [
+        "reline",
+        "repair",
+        "splint",
+        "mouth guard",
+        "chrome",
+        "model",
+        "miscellaneous",
+        "partial acrylic appliances",
+        "full acrylic appliances",
+        "vaplast-flexible"
+      ]
     }
   }
 }
